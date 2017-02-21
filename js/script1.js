@@ -7,7 +7,7 @@ function pow(x, n) {
       res *= x;
     }
 
-    return console.log(res);
+    return res;
 
   } else if (n < 0) { // отрицательная степень
 
@@ -16,7 +16,7 @@ function pow(x, n) {
       res *= x;
     }
 
-    return console.log(1 / res);
+    return 1 / res;
 
   } else if (n == 0) { // нулевая степень
     return 1;
@@ -33,3 +33,5 @@ if ( ( (x % 1) !== 0) || ( (n % 1) !== 0) ) { // проверяет целое �
 } else {
   pow(x, n);
 }
+
+console.log( pow(x, n) );
